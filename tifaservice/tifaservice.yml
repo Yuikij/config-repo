@@ -1,5 +1,6 @@
 example.property: "I AM IN THE YoDa大师321"
 example.toda: "{cipher}3c21dea7970a14d685a3223da906cfed5af4c6c6a86abf6dd1a8e0ac201aaa08"
+management.endpoints.web.exposure.include: refresh
 spring:
   datasource:
     url: "jdbc:mysql://106.14.126.197:3306/tifa?serverTimezone=UTC"
