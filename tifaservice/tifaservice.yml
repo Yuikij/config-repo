@@ -5,7 +5,7 @@ spring:
     url: "jdbc:mysql://106.14.126.197:3306/tifa?serverTimezone=UTC"
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: {cipher}af5bd42a5516c0546feb171b106d4f912120dd3cd5f75d90c394461e3f0097af
+    password: "{cipher}af5bd42a5516c0546feb171b106d4f912120dd3cd5f75d90c394461e3f0097af"
     #   hikari数据源配置，
     hikari:
       connection-timeout: 30000
