@@ -1,4 +1,4 @@
-example.property: "I AM IN THE YoDa大师"
+example.property: "I AM IN THE YoDa大师123"
 example.toda: "{cipher}3c21dea7970a14d685a3223da906cfed5af4c6c6a86abf6dd1a8e0ac201aaa08"
 spring:
   datasource:
