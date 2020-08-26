@@ -2,7 +2,7 @@ example.property: "I AM IN THE YoDa大师"
 example.toda: "{cipher}3c21dea7970a14d685a3223da906cfed5af4c6c6a86abf6dd1a8e0ac201aaa08"
 spring:
   datasource:
-    url: jdbc:mysql://106.14.126.197:3306/tifa?serverTimezone=UTC
+    url: "jdbc:mysql://106.14.126.197:3306/tifa?serverTimezone=UTC"
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: {cipher}af5bd42a5516c0546feb171b106d4f912120dd3cd5f75d90c394461e3f0097af
