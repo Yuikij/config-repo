@@ -21,8 +21,8 @@ spring:
       file-size-threshold: 20MB
   mail:
     host: smtp.163.com
-    username: {cipher}57e078530315085fd831621e0dd87a44ec181aa8d2e8f2a697f06f5f380c971251150f385bd07a388c25706f4dbabd3e
-    password: {cipher}25819ebe467976f87c4dfc5d2666ca8a1945e7701f4423bbd19336b54bd6b710c125527aa5a2a1a8ad18ae59ab86481d
+    username: "{cipher}57e078530315085fd831621e0dd87a44ec181aa8d2e8f2a697f06f5f380c971251150f385bd07a388c25706f4dbabd3e"
+    password: "{cipher}25819ebe467976f87c4dfc5d2666ca8a1945e7701f4423bbd19336b54bd6b710c125527aa5a2a1a8ad18ae59ab86481d"
     protocol: smtp
     properties:
       mail:
