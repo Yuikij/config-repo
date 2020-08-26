@@ -1,2 +1,54 @@
 example.property: "I AM IN THE YoDa大师"
 example.toda: "{cipher}3c21dea7970a14d685a3223da906cfed5af4c6c6a86abf6dd1a8e0ac201aaa08"
+spring:
+  datasource:
+    url: jdbc:mysql://106.14.126.197:3306/tifa?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: {cipher}af5bd42a5516c0546feb171b106d4f912120dd3cd5f75d90c394461e3f0097af
+    #   hikari数据源配置，
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 20
+      max-lifetime: 60000
+      minimum-idle: 5
+  #    data-base-name: enbo
+  servlet:
+    multipart:
+      enabled: true #是否启用http上传处理
+      max-request-size: 500MB #最大请求文件的大小
+      max-file-size: 500MB #设置单个文件最大长度
+      file-size-threshold: 20MB
+  mail:
+    host: smtp.163.com
+    username: {cipher}57e078530315085fd831621e0dd87a44ec181aa8d2e8f2a697f06f5f380c971251150f385bd07a388c25706f4dbabd3e
+    password: {cipher}25819ebe467976f87c4dfc5d2666ca8a1945e7701f4423bbd19336b54bd6b710c125527aa5a2a1a8ad18ae59ab86481d
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+          auth: true
+  redis:
+    # Redis数据库索引（默认为0）
+    database: 0
+    # Redis服务器地址..
+    host: 106.14.126.197
+    port: 6379
+    jedis:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 200
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+        # 连接池中的最大空闲连接
+        max-idle: 10
+        # 连接池中的最小空闲连接
+        min-idle: 0
+    timeout: 1000ms
+#  rabbitmq:
+#    host: 106:14:126:197
+#    port: 5672
+server:
+  port: 8081
